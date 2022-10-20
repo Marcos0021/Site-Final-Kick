@@ -1,0 +1,54 @@
+header {
+    background-image: none;
+    width: 100%;
+}
+
+.faixa-top {
+    width: 100%;
+    background-color: #25323E;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 20%) 0px 5px 10px 1px;
+    text-align: center;
+}
+
+.faixa-top h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.faixa-top b {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.container-como-assinar-carro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #25323E;
+}
+
+.titulo-assinar-carro {
+    margin-top: 2.2rem;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.btn-assinar {
+    background-color: rgb(34 183 97);
+}
+
+.btn-assinar:hover {
+    background-color: rgb(30, 156, 83);
+}
+
+.titulo-cards {
+    color: #25323E;
+}

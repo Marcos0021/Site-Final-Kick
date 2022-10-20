@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alugar Carro</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/carro-por-assinatura-style.css">
+    <link rel="stylesheet" href="/assets/css/alugar-carro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/b59012468b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-container">
+                <a href="#"><img class="logo" src="/assets/img/logo.png"></a>
+                <nav class="nav-list">
+                    <div id="button" class="btn not-active">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="menu">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Alugar</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Ofertas</a></li>
+                        <li class="nav-item"><a href="#container-somos" class="nav-link">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <div class="container-como-assinar-carro">
+        <h1 class="titulo-assinar-carro">Para alugar<br>Um carro é simples</h1>
+        <div class="instrucoes-assinatura-carro">
+            <span>1. Escolha um modelo de veículo.</span>
+            <span>2. Preencha seus dados e aguarde nosso contato.</span>
+            <span>3. Faremos uma análise de documentação.</span>
+            <span>4. Retire seu veículo e fique sem preocupações.</span>
+        </div>
+    </div>
+
+    <div id="background-cards">
+        <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+                <h2 class="titulo-cards">Chevrolet Onix 2020</h2>
+                <img class="cars-image" src="/assets/img/chevrolet-onix2020-plus-turbo-premiere-preto.png">
+                <h3 style="font-size: 1.5em;">Carro por Aluguel</h3>
+                <p>Valor da Diária: <b><u>R$ 113,80</u></b></p>
+                <button onclick="dadosPessoais()" class="btn-assinar">
+                    <a href="#">alugar</a>
+                </button>
+            </div>
+
+            <div class="mySlides fade">
+                <h2 class="titulo-cards">Golf 1.0 TSI Comfortline 2017</h2>
+                <img class="cars-image" src="/assets/img/golf-gti.png">
+                <h3 style="font-size: 1.5em;">Carro por Aluguel</h3>
+                <p>Valor da Diária: <b><u>R$ 179,90</u></b></p>
+                <button onclick="dadosPessoais()" class="btn-assinar">
+                    <a href="#">alugar</a>
+                </button>
+            </div>
+            
+            <div class="mySlides fade">
+                <h2 class="titulo-cards">Cruze SPORT6 RS</h2>
+                <img style="height: 200px; margin: 15px 0px" class="cars-image" src="/assets/img/cruze-sport6-rs.png">
+                <h3 style="font-size: 1.5em; margin-top: 10px">Carro por Aluguel</h3>
+                <p>Valor da Diária: <b><u>R$ 142,50</u></b></p>
+                <button onclick="dadosPessoais()" class="btn-assinar">
+                    <a href="#">alugar</a>
+                </button>
+            </div>
+            
+            <div class="mySlides fade">
+                <h2 class="titulo-cards">BMW Serie 2 Coupé</h2>
+                <img style="height: 210px; margin: 13px 0px" class="cars-image" src="/assets/img/BMW-2-Series-gran-coupe.png">
+                <h3 style="font-size: 1.5em;">Carro por Aluguel</h3>
+                <p>Valor da Diária: <b><u>R$ 346,23</u></b></p>
+                <button onclick="dadosPessoais()" class="btn-assinar">
+                    <a href="#">alugar</a>
+                </button>
+            </div>
+
+            <div class="mySlides fade">
+                <h2 style="margin-bottom: 15px;" class="titulo-cards">Jeep Compass</h2>
+                <img style="height: 190px; margin: 15px 0px" class="cars-image" src="/assets/img/Jeep-Compass.png">
+                <h3 style="font-size: 1.5em;">Carro por Aluguel</h3>
+                <p>Valor da Diária: <b><u>R$ 108,50</u></b></p>
+                <button onclick="dadosPessoais()" class="btn-assinar">
+                    <a href="#">alugar</a>
+                </button>
+            </div>
+            
+    
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+    
+            
+            <div style="text-align: center;">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+    </div> 
+
+    <footer id="container-footer">
+        <div class="flex-footer">
+            <div class="boxs-footer">
+                <div class="box-contato-footer" style="border: solid 2px white; border-radius: 10px">
+                    <h1>Contato</h1>
+                    <div class="flex-number">
+                        
+                        <a href="https://api.whatsapp.com/send?phone=5517997555575&amp;text=Olá%2C%20vi%20seu%20site%2C%20quero%20saber%20mais%20" target="_blank"><img src="/assets/img/whatsapp-teste.png" style="width: 50px; height: 50px" alt="WhatsApp Icon"><p class="numero-contato">+55 17 9090-9090
+                        
+                        </a></p>
+                        
+                    </div>
+                    <p>Email: zapdos.locacoes@contato.com</p>
+                    <p>Endereço: Rua Rodolfo Marconato, 533 - Pirangi Sp</p>
+                    <div class="footer-icons" style="margin-top: -5px">
+                        <a href="https://www.facebook.com/Marcos.Eduardo15/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/marcos_eduardo145/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5517997555575&amp;text=Olá%2C%20vi%20seu%20site%2C%20quero%20saber%20mais%20" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="box-informacao-footer">
+                    <div class="lista-1">
+                        <ul class="lista-ordenada">
+                            <h3 class="titulo-informacao">Negócios</h3>
+                            <div class="flex-list">
+                                <a href="#" class="items-link"><li class="items">Para Empresas</li></a>
+                                <a href="#" class="items-link"><li class="items">Agências de Viagem</li></a>
+                                <a href="#" class="items-link"><li class="items">Seguradoras</li></a>
+                                <a href="#" class="items-link"><li class="items">Seja um Franqueado</li></a>
+                            </div>
+
+                        </ul>
+                    </div>
+                    
+                    <div class="lista-2">
+                        <ul class="lista-ordenada">
+                            <h3 class="titulo-informacao">Para você</h3>
+                            <div class="flex-list">
+                                <a href="#" class="items-link"><li class="items">Minhas Reservas</li></a>
+                                <a href="#" class="items-link"><li class="items">Roteiros de Viagem</li></a>
+                                <a href="#" class="items-link"><li class="items">Fidelidade</li></a>
+                                <a href="#" class="items-link"><li class="items">Cadastre-se</li></a>
+                            </div>
+
+                        </ul>
+                    </div>
+
+                    <div class="lista-3">
+                        <ul class="lista-ordenada">
+                            <h3 class="titulo-informacao">Institucional</h3>
+                            <div class="flex-list">
+                                <a href="#" class="items-link"><li class="items">Sobre a Zapdos</li></a>
+                                <a href="#" class="items-link"><li class="items">Relação com Investidor</li></a>
+                                <a href="#" class="items-link"><li class="items">Sala de Imprensa</li></a>
+                                <a href="#" class="items-link"><li class="items">Trabalhe Conosco</li></a>
+                            </div>
+
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/carrosel-script.js"></script>
+    <script src="assets/js/dados-pessoais-script.js"></script>
+    <script src="assets/js/menu-mobile-script.js"></script>
+</body>
+</html>
