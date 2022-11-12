@@ -21,7 +21,6 @@ header {
     background-image: url(/assets/img/background.jpg);
     width: 100%;
     height: auto;
-    max-height: 1000px;
     background-position: center;
     background-size: cover;
 }
@@ -99,14 +98,14 @@ header {
     width: 100%;
     height: auto;
     background: rgba(0,0,0,.45);
-    position: relative;
-    top: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px
 }
 
 .content {
     font-family: 'Roboto', sans-serif;
     width: 90%;
-    height: 190px;
+    height: auto;
     color: white;
 }
 
@@ -128,6 +127,12 @@ input[type=datetime-local], select{
     margin: 8px 0px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.search-content {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
 }
 
 #retirada {
@@ -166,7 +171,6 @@ input[type=datetime-local], select{
 
 #data {
     width: 20%;
-    position: relative;
     margin-right: 20px;
 }
 
@@ -187,7 +191,6 @@ input[type=datetime-local], select{
 
 #devolucao {
     width: 20%;
-    position: relative;
     margin-right: 20px;
 }
 
@@ -230,30 +233,32 @@ label {
     width: 35%;
     color: white;
     margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
 }
 
 #banner-text-area h1 {
     font-family: 'Paytone One', sans-serif;
     font-weight: bold;
     font-style: italic;
-    font-size: 55px;
+    font-size: 3.5em;
     line-height: 65px;
 }
 
 .image-banner {
     animation: opacidade 2s ease-out;
+    width: 42%;
 }
 
 #banner-text-area p {
     margin-top: 12px;
     font-family: Arial;
-    font-size: 25px;
+    font-size: 1.5em;
     line-height: 30px;
 }
 
 
 .search-button {
-    text-overflow: ellipsis;
     background: #F97D00;
     color: #FFF;
     border: 0;
@@ -262,11 +267,9 @@ label {
     font-size: 16px;
     font-weight: 300;
     padding: 0.6em 1em;
-    position: relative;
-    left: 0;
-    top: 28px;
     height: 48px;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .search-button:hover {
@@ -624,6 +627,7 @@ label {
 
 .box-contato-footer p {
     padding: 0.2rem;
+    text-align: center;
 }
 
 .flex-number {
@@ -861,6 +865,15 @@ label {
         justify-content: center;
         padding-top: 1.2rem;
     }
+
+    .image-banner {
+        display: none;
+    }
+
+    #banner-text-area {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:550px) {
@@ -871,5 +884,56 @@ label {
 
     .btn {
         left: 50%;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    #banner-text-area h1 {
+        font-size: 3em;
+    }
+
+    #banner-text-area p {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #banner-text-area h1 {
+        font-size: 2.5em;
+    }
+
+    #banner-text-area p {
+        font-size: 1.3em;
+    }
+
+    .titulo-quem-somos {
+        font-size: 20px;
+    }
+    
+    .text-quem-somos {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    #formulario {
+        flex-direction: column;
+    }
+
+    #retirada {
+        width: 80%;
+    }
+
+    #data {
+        width: 80%;
+    }
+
+    #devolucao {
+        width: 80%;
+    }
+
+    .search-button {
+        width: 150px;
+        margin: 20px 0px 15px 2px;
     }
 }
